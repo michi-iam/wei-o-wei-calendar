@@ -1,0 +1,38 @@
+<h1>kalender/kalender/kalender</h1>
+
+
+
+
+<div class="row">
+    {{ calendar }}
+</div>
+
+<div class="row text-center">
+    <div class="col-4">
+        <button 
+        class="myKalSwitchMonthBtn"
+        direction="prev"
+        month="{{ month }}"
+        year="{{ year }}">zurück
+        </button>
+        
+    </div>
+    <div class="col-4">
+        <button 
+        class="myKalSwitchMonthBtn"
+        direction="now"
+        month="{{ month }}"
+        year="{{ year }}">heute
+        </button>
+
+    </div>
+    <div class="col-4">
+        <button 
+        class="myKalSwitchMonthBtn"
+        direction="next"
+        month="{{ month }}"
+        year="{{ year }}">weiter
+        </button>
+
+    </div>
+</div>

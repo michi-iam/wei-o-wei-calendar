@@ -1,0 +1,9 @@
+<h1>kalender/kalender/edit_event</h1>
+
+
+<form method="POST" action="post_event">
+    {% csrf_token %}
+    {{ event }}
+    {{ eventextra }}
+    <button id="add_event_btn" event_id="{{ event_id }}" type="submit">eintragen</button>
+</form>

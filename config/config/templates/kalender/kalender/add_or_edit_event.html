@@ -1,0 +1,15 @@
+<h1>kalender/kalender/add_or_edit_event</h1>
+
+<form method="POST" action="post_event">
+    {% csrf_token %}
+    {{ eventform }}
+    {{ eventextraform }}
+    <input type="hidden" name="event_id" value="{{ event_id }}">
+    <button id="add_event_btn" event_id="{{ event_id }}" type="submit">eintragen</button>
+</form>
+
+<form method="POST" action="delete_event">
+    {% csrf_token %}
+    <input type="hidden" name="event_id" value="{{ event_id }}">
+    <button id="delete_event_btn" type="submit">löschen</button>
+</form>
