@@ -1,7 +1,7 @@
 # wei-o-wei-calendar
 
 ## install
-1. start a new django-project
+1. start a new django-project **or** add to an existing project
 2. clone wei-o-wei-calendar repostitory
 3. add the config/kalender to your project
 4. add kalender to your settings.py
@@ -12,3 +12,4 @@
     * Those are only needed to run the selenium-test. If you don't want to run test_selenium.py, you may delete the section and also the import in line 1.
 7. python manage.py makemigrations
 8. python manage.py migrate
+9. python manage.py runserver
